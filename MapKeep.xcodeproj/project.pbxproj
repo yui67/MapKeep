@@ -13,6 +13,7 @@
 		DE6A65272976E8B7000EC155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6A65252976E8B7000EC155 /* Main.storyboard */; };
 		DE6A65292976E8B9000EC155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6A65282976E8B9000EC155 /* Assets.xcassets */; };
 		DE6A652C2976E8B9000EC155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6A652A2976E8B9000EC155 /* LaunchScreen.storyboard */; };
+		DE6A65342976E8D2000EC155 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A65332976E8D2000EC155 /* Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DE6A65282976E8B9000EC155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE6A652B2976E8B9000EC155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE6A652D2976E8B9000EC155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE6A65332976E8D2000EC155 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DE6A65212976E8B7000EC155 /* SceneDelegate.swift */,
 				DE6A65232976E8B7000EC155 /* ViewController.swift */,
 				DE6A65252976E8B7000EC155 /* Main.storyboard */,
+				DE6A65332976E8D2000EC155 /* Annotation.swift */,
 				DE6A65282976E8B9000EC155 /* Assets.xcassets */,
 				DE6A652A2976E8B9000EC155 /* LaunchScreen.storyboard */,
 				DE6A652D2976E8B9000EC155 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				DE6A65242976E8B7000EC155 /* ViewController.swift in Sources */,
 				DE6A65202976E8B7000EC155 /* AppDelegate.swift in Sources */,
+				DE6A65342976E8D2000EC155 /* Annotation.swift in Sources */,
 				DE6A65222976E8B7000EC155 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
