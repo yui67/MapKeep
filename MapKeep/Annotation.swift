@@ -24,6 +24,11 @@ struct Annotation {
         
         return annotation
     }
+    
+    func setRegion(_ map: MKMapView, distance: CLLocationDistance, animaged: Bool) {
+        let region = MKCoordinateRegion(center: annotation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        map.setRegion(region, animated: true)
+    }
 }
 
 
