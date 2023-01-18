@@ -18,6 +18,7 @@ class ViewController: UIViewController, MKMapViewDelegate{
         // Do any additional setup after loading the view.
         map.delegate = self
         map.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: "pin")
+        map.register(MKAnnotationView.self, forAnnotationViewWithReuseIdentifier: "house")
         map.addAnnotation(annotation.annotation)
         annotation.setRegion(map, distance: 1500, animaged: true)
         
@@ -29,11 +30,15 @@ class ViewController: UIViewController, MKMapViewDelegate{
             return nil
         }
         //小藍點是不可以修改的.接下來是要取得顯示標記的視圖元件
-        let markView = mapView.dequeueReusableAnnotationView(withIdentifier: "pin", for: annotation) as? MKMarkerAnnotationView
+//        let markView = mapView.dequeueReusableAnnotationView(withIdentifier: "pin", for: annotation) as? MKMarkerAnnotationView
+        //自定義圖標的 View
+        let markView = mapView.dequeueReusableAnnotationView(withIdentifier: "house", for: annotation)
         
         // 然後修改顏色為棕色
-        markView?.markerTintColor = .brown
-        
+//        markView?.markerTintColor = .brown
+        // 設置 user 位置的圖片
+        markView.image = UIImage(named: "house")
+        markView.canShowCallout = true
         return markView
     }
 
